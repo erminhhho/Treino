@@ -3,295 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plano de Treino ABC</title>
+    <title>Plano de Treino ABCAB</title>
     <style>
-        /* Reset básico */
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
-
         header {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 20px 0;
+            background-color: #3498db;
+            color: white;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
         }
-
         header h1 {
+            margin: 0;
             font-size: 2.5em;
-            letter-spacing: 2px;
         }
-
-        .container {
-            flex: 1;
-            width: 90%;
-            max-width: 1200px;
+        main {
+            max-width: 900px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        .day {
-            margin-bottom: 40px;
+        section h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
         }
-
-        .day h3 {
-            background-color: #3498db;
-            color: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-            text-align: center;
-        }
-
         ul {
-            list-style-type: none;
+            padding-left: 20px;
         }
-
-        li {
-            background-color: #ecf0f1;
-            margin: 10px 0;
-            padding: 15px;
-            border-left: 5px solid #2980b9;
-            border-radius: 4px;
-            transition: background-color 0.3s;
+        ul li {
+            margin-bottom: 10px;
         }
-
-        li:hover {
-            background-color: #d0e1f9;
-        }
-
-        .exercise-title {
-            font-weight: bold;
-            font-size: 1.1em;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .alternatives {
-            font-size: 0.9em;
-            color: #7f8c8d;
-            margin-left: 10px;
-        }
-
         footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
             text-align: center;
-            padding: 15px 0;
-            font-size: 0.9em;
-            margin-top: auto;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            .day h3 {
-                font-size: 1.3em;
-            }
-
-            li {
-                padding: 10px;
-            }
-
-            .exercise-title {
-                font-size: 1em;
-            }
-        }
-
-        /* Estilos para impressão */
-        @media print {
-            body {
-                background-color: #fff;
-                color: #000;
-            }
-
-            header, footer {
-                display: none;
-            }
-
-            .container {
-                width: 100%;
-                box-shadow: none;
-                border: none;
-                padding: 0;
-            }
-
-            .day h3 {
-                background-color: #fff;
-                color: #000;
-                border: none;
-                padding: 10px 0;
-            }
-
-            li {
-                border-left: 2px solid #2980b9;
-                padding: 10px;
-                background-color: #fff;
-            }
-
-            .alternatives {
-                color: #333;
-            }
+            padding: 10px;
+            background: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Plano de Treino ABC</h1>
-    </header>
+<header>
+    <h1>Plano de Treino ABCAB</h1>
+</header>
 
-    <div class="container">
-        <!-- Dia A -->
-        <div class="day">
-            <h3>Dia A: Peito, Ombros, Tríceps</h3>
-            <ul>
-                <li>
-                    <span class="exercise-title">Supino com Barra</span>
-                    <span class="alternatives"><em>Alternativas:</em> Supino com Halteres, Supino Declinado com Barra</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Supino Inclinado com Halteres</span>
-                    <span class="alternatives"><em>Alternativas:</em> Supino Inclinado com Barra, Supino Inclinado na Máquina Smith</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Crucifixo com Halteres</span>
-                    <span class="alternatives"><em>Alternativas:</em> Fly Inclinado com Halteres, Crucifixo no Cabo</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Elevação Lateral com Halteres</span>
-                    <span class="alternatives"><em>Alternativas:</em> Elevação Lateral com Cabo, Elevação Lateral na Máquina</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Desenvolvimento com Halteres</span>
-                    <span class="alternatives"><em>Alternativas:</em> Desenvolvimento com Barra, Desenvolvimento Arnold</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Tríceps no Pulley (Tríceps Pushdown)</span>
-                    <span class="alternatives"><em>Alternativas:</em> Tríceps na Polia Alta com Corda, Tríceps Pushdown com Barra V</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Tríceps Testa</span>
-                    <span class="alternatives"><em>Alternativas:</em> Extensão de Tríceps Skullcrushers, Tríceps Francês com Halteres, Mergulho em Banco (Dips)</span>
-                </li>
-            </ul>
-        </div>
+<main>
+    <section>
+        <h2>Dia A: Peito, Ombros, Tríceps</h2>
+        <ul>
+            <li>Supino com Barra</li>
+            <li>Supino Inclinado com Halteres</li>
+            <li>Crucifixo com Halteres</li>
+            <li>Elevação Lateral com Halteres</li>
+            <li>Desenvolvimento com Halteres</li>
+            <li>Tríceps no Pulley</li>
+            <li>Tríceps Testa</li>
+        </ul>
+    </section>
 
-        <!-- Dia B -->
-        <div class="day">
-            <h3>Dia B: Costas, Bíceps</h3>
-            <ul>
-                <li>
-                    <span class="exercise-title">Puxada Frontal na Polia Alta</span>
-                    <span class="alternatives"><em>Alternativas:</em> Puxada pela Nuca, Puxada com Pegada Neutra</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Remada Baixa no Cabo</span>
-                    <span class="alternatives"><em>Alternativas:</em> Remada com Halteres, Remada Curvada com Barra</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Puxada na Polia Baixa com Barra V</span>
-                    <span class="alternatives"><em>Alternativas:</em> Remada Sentada, Remada Unilateral no Cabo</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Rosca Direta com Barra</span>
-                    <span class="alternatives"><em>Alternativas:</em> Rosca com Halteres, Rosca 21</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Rosca Alternada com Halteres</span>
-                    <span class="alternatives"><em>Alternativas:</em> Rosca Concentrada, Rosca Martelo no Cabo</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Rosca Martelo</span>
-                    <span class="alternatives"><em>Alternativas:</em> Rosca Martelo Cruzada, Rosca Inversa com Barra</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Prancha</span>
-                    <span class="alternatives"><em>Alternativas:</em> Prancha Lateral, Prancha com Elevação de Perna</span>
-                </li>
-            </ul>
-        </div>
+    <section>
+        <h2>Dia B: Costas, Bíceps</h2>
+        <ul>
+            <li>Puxada Frontal na Polia Alta</li>
+            <li>Remada Baixa no Cabo</li>
+            <li>Puxada na Polia Baixa com Barra V</li>
+            <li>Rosca Direta com Barra</li>
+            <li>Rosca Alternada com Halteres</li>
+            <li>Rosca Martelo</li>
+            <li>Prancha</li>
+        </ul>
+    </section>
 
-        <!-- Dia C -->
-        <div class="day">
-            <h3>Dia C: Pernas</h3>
-            <ul>
-                <li>
-                    <span class="exercise-title">Agachamento Livre</span>
-                    <span class="alternatives"><em>Alternativas:</em> Agachamento Frontal, Agachamento Sumô</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Leg Press</span>
-                    <span class="alternatives"><em>Alternativas:</em> Leg Press 45º, Prensa de Pernas Horizontal</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Hack Machine</span>
-                    <span class="alternatives"><em>Alternativas:</em> Agachamento na Máquina Smith, Agachamento Goblet com Halter</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Cadeira Extensora</span>
-                    <span class="alternatives"><em>Alternativas:</em> Extensão de Pernas com Halteres, Extensão de Pernas Unilateral</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Mesa Flexora</span>
-                    <span class="alternatives"><em>Alternativas:</em> Flexão de Pernas em Pé, Flexão de Pernas deitado com Halteres</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Panturrilha na Hack Machine</span>
-                    <span class="alternatives"><em>Alternativas:</em> Elevação de Panturrilha Sentado, Elevação de Panturrilha em Pé com Halteres</span>
-                </li>
-                <li>
-                    <span class="exercise-title">Cadeira Abdutora</span>
-                    <span class="alternatives"><em>Alternativas:</em> Abdução de Perna no Cabo, Abdução de Perna Lateral com Halteres</span>
-                </li>
-            </ul>
-        </div>
+    <section>
+        <h2>Dia C: Pernas</h2>
+        <ul>
+            <li>Agachamento Livre</li>
+            <li>Leg Press</li>
+            <li>Hack Machine</li>
+            <li>Cadeira Extensora</li>
+            <li>Mesa Flexora</li>
+            <li>Panturrilha na Hack Machine</li>
+            <li>Cadeira Abdutora</li>
+        </ul>
+    </section>
+</main>
 
-        <!-- Informações Adicionais -->
-        <div class="day">
-            <h3>Informações sobre o Treino e Estrutura Semanal</h3>
-            <p>Este plano de treino é organizado no esquema ABC, focado em hipertrofia dos braços, peitos e ombros, fortalecimento das costas e pernas proporcionais ao corpo. É ideal para indivíduos com sobrepeso, garantindo segurança e eficácia.</p>
-
-            <h4>Estrutura Semanal:</h4>
-            <ul>
-                <li><strong>Semana 1:</strong> A, B, C, A, B</li>
-                <li><strong>Semana 2:</strong> C, A, B, C, A</li>
-            </ul>
-
-            <h4>Dicas Adicionais:</h4>
-            <ul>
-                <li><strong>Aquecimento e Alongamento:</strong> Inicie cada sessão com 5-10 minutos de aquecimento cardiovascular leve e termine com alongamentos estáticos.</li>
-                <li><strong>Progressão de Carga:</strong> Aumente gradualmente o peso conforme se sentir confortável, priorizando a técnica correta.</li>
-                <li><strong>Descanso e Recuperação:</strong> Respeite os dias de descanso para permitir a recuperação muscular.</li>
-                <li><strong>Postura:</strong> Mantenha a postura correta durante todos os exercícios para maximizar os benefícios e minimizar o risco de lesões.</li>
-                <li><strong>Adaptações para Limitações:</strong> Se algum exercício causar desconforto, substitua-o por uma variação mais confortável ou menos impactante.</li>
-            </ul>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Plano de Treino ABC. Todos os direitos reservados.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Plano de Treino ABCAB. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
